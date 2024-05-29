@@ -23,8 +23,6 @@ class AgentAccount implements VersionableInterface, ComparableInterface
 
     protected $name;
     protected $homePage;
-    protected $accountServiceHomePage;
-    protected $accountName;
 
     public function __construct() {
         if (func_num_args() == 1) {
@@ -38,8 +36,4 @@ class AgentAccount implements VersionableInterface, ComparableInterface
     public function getName() { return $this->name; }
     public function setHomePage($value) { $this->homePage = $value; return $this; }
     public function getHomePage() { return $this->homePage; }
-    public function setAccountServiceHomePage($value) { $this->accountServiceHomePage = $value; return $this; }
-    public function getAccountServiceHomePage() { return $this->accountServiceHomePage; }
-    public function setAccountName($value) { $this->accountName = $value; return $this; }
-    public function getAccountName() { return $this->accountName; }
 }
